@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Recognition</title>
+    
+    <!-- Bootstrap CSS (you can include it if desired) -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Include ml5.js script -->
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Heading with hand gesture icon -->
+        <h1 class="text-center">
+            <span class="gesture-icon">&#x1F44C;</span> Hand Gesture Recognition
+        </h1>
+        
+        <!-- Webcam live view -->
+        <div id="webcam-container" class="mt-4">
+            <video id="webcam" autoplay></video>
+        </div>
+        
+        <!-- Display recognized gesture name -->
+        <div id="gesture-name" class="mt-4">
+            Gesture: <span id="gesture-text">No gesture detected</span>
+        </div>
+        
+        <!-- Capture and identify buttons -->
+        <div class="text-center mt-3">
+            <button id="capture-btn" class="btn btn-primary">Capture Gesture</button>
+            <button id="identify-btn" class="btn btn-success">Identify Gesture</button>
+        </div>
+        
+        <!-- Captured image display -->
+        <div id="captured-image" class="mt-4">
+            <img id="captured-image-src" src="" alt="Captured Gesture" class="img-fluid">
+        </div>
+    </div>
+    
+    <!-- Main JavaScript -->
+    <script src="main.js"></script>
+</body>
+</html>

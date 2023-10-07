@@ -1,0 +1,42 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Hand Gesture Icon Styles */
+.gesture-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Webcam Container Styles */
+#webcam-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Capture and Identify Button Styles */
+#capture-btn,
+#identify-btn {
+    width: 150px;
+}
+
+/* Gesture Name Styles */
+#gesture-name {
+    text-align: center;
+}
+
+/* Captured Image Styles */
+#captured-image {
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+}
